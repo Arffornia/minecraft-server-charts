@@ -14,7 +14,7 @@ metadata:
   {{- end }}
   labels:
     app: {{ $serviceName }}
-    chart: "{{ include "chart.fullname" . }}"
+    chart: "{{ include "chart.fullname" $ }}"
     release: "{{ $.Release.Name }}"
     heritage: "{{ $.Release.Service }}"
 spec:
